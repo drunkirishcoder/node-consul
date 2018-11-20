@@ -168,6 +168,15 @@ describe('utils', function() {
     });
   });
 
+  describe('encode', function() {
+    it('should work', function() {
+      should(utils.encode(null)).equal(null);
+      should(utils.encode()).equal(undefined);
+      should(utils.encode('')).equal('');
+      should(utils.encode('hello world')).equal('aGVsbG8gd29ybGQ=');
+    });
+  });
+
   describe('decode', function() {
     it('should work', function() {
       should(utils.decode(null)).equal(null);
