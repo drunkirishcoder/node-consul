@@ -187,6 +187,8 @@ describe('Consul', function() {
         '  - isRunning (sync)',
         '  - updateTime (sync)',
         '  - end (sync)',
+        ' Txn',
+        '  - submit (callback)',
       ]);
     });
   });
